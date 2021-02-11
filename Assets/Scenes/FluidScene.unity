@@ -383,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f22e2e1a78ca844ea5a82dd3bb5a432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 400
-  spread: 1.5
+  amount: 500
+  spread: 3
   prefab: {fileID: 6626150213709834582, guid: 00a4ce456d4ccdd4fac8a325737a9d47, type: 3}
 --- !u!1 &519420028
 GameObject:

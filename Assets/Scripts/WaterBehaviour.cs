@@ -30,7 +30,7 @@ public class WaterBehaviour : MonoBehaviour
         Advect(res);
         Level(res);
         Diffusion(res);
-
+        this.GetComponent<Rigidbody2D>().AddForce(this.GetComponent<Rigidbody2D>().velocity*-0.1f);
         if (debugInfo)
         {
             Debug.DrawRay(this.transform.position, new Vector3(this.transform.localScale.x * 0.6f, 0), Color.white);
