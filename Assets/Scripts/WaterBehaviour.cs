@@ -100,7 +100,11 @@ public class WaterBehaviour : MonoBehaviour
                 i++;
         }
         dir /= i;
-        this.gameObject.GetComponent<Rigidbody2D>().AddForce(dir * (1 - EnergyLoss));
+        if (dir.magnitude < this.GetComponent<Rigidbody2D>().velocity.magnitude)
+        {
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(dir * (1 - EnergyLoss));
+
+        }
         if (debugInfo)
         {
             Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0), Color.green);
